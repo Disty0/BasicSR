@@ -1,9 +1,5 @@
 [build-system]
-requires = [
-  "addict", "future", "lmdb", "numpy", "opencv-python", "Pillow",
-  "pyyaml", "requests", "scikit-image", "scipy", "tb-nightly",
-  "torch", "torchvision", "tqdm", "yapf", "cython", "setuptools"
-]
+requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 packages = ["basicsr"]
 
@@ -21,6 +17,12 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 license = {text = "Apache-2.0"}
+
+dependencies = [
+  "addict", "future", "lmdb", "numpy", "opencv-python", "Pillow",
+  "pyyaml", "requests", "scikit-image", "scipy", "tb-nightly",
+  "torch", "torchvision", "tqdm", "yapf", "cython"
+]
 
 [project.urls]
 Homepage = "github.com/Disty0/BasicSR"
